@@ -209,6 +209,7 @@ func (t *Transport) start() error {
 			router:     t.router,
 			tracer:     t.tracer,
 			headerCase: t.headerCase,
+			logger:     t.logger,
 		},
 		OnPeerStatusChanged: t.onPeerStatusChanged,
 	}
