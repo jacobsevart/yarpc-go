@@ -147,6 +147,7 @@ func (h *handler) handleStream(
 	return transport.UpdateSpanWithErr(span, transport.DispatchStreamHandler(
 		streamHandler,
 		tServerStream,
+		h.logger,
 	))
 }
 
